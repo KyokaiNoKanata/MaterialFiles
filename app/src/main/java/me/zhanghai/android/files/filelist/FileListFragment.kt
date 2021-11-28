@@ -801,6 +801,10 @@ class FileListFragment : Fragment(), BreadcrumbLayout.Listener, FileListAdapter.
                 pickFiles(viewModel.selectedFiles)
                 true
             }
+            R.id.action_cancel_a->{
+                clearSelectedFiles()
+                true
+            }
             R.id.action_cut -> {
                 cutFiles(viewModel.selectedFiles)
                 true
